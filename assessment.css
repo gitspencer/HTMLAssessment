@@ -3,11 +3,19 @@ h1, h2, h3, h4, h5, h6 {
 	font: sans-serif;
 }
 
+table {
+	border: medium solid black;
+}
+
 table > thead > tr > th {
 	font-weight: bold;
 	color: green;
 	border: medium solid black;
 	text-align: center;
+}
+
+tr:nth-child(even) {
+	background-color: palevioletred;
 }
 
 #teamRoster ul, ol, li {
@@ -31,11 +39,15 @@ blockquote {
 body > ul > li:first-child {
 	background-image: url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
 	background-repeat: no-repeat;
+	background-color: rgba(255, 255, 255, .7);
+	background-blend-mode: overlay;
 }
 
 body > ul > li:last-child {
 	background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
 	background-repeat: no-repeat;
+	background-color: rgba(255, 255, 255, .7);
+	background-blend-mode: overlay;
 }
 
 form > ul > li {
